@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   const [timeLeft, setTimeLeft] = useState({
@@ -99,6 +100,8 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <Button>Click me</Button>
 
           {/* CTA Text */}
           <p className="text-gray-500 text-lg">
