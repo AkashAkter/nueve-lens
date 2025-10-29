@@ -208,15 +208,15 @@ export default function RegisterPage() {
 
             {/* Success Message */}
             <h3 className="text-2xl font-bold text-custom mb-3">
-              Welcome to the Family!
+              Welcome to Nueve Lens!
             </h3>
             <p className="text-light mb-4">
               Your account has been successfully created
             </p>
             <div className="space-y-2 text-sm text-light">
-              <p>🎉 Get ready to capture amazing moments</p>
-              <p>📸 Your photographic journey begins now</p>
-              <p>✨ Redirecting you to your new home...</p>
+              <p>🎉 Ready to book your first photoshoot</p>
+              <p>📸 Explore amazing portfolios</p>
+              <p>📖 Discover photography tips & blogs</p>
             </div>
 
             {/* Progress with Camera Animation */}
@@ -230,7 +230,9 @@ export default function RegisterPage() {
                   ></div>
                 ))}
               </div>
-              <span className="text-sm text-light">Preparing your lens...</span>
+              <span className="text-sm text-light">
+                Setting up your profile...
+              </span>
             </div>
           </div>
         </div>
@@ -264,8 +266,8 @@ export default function RegisterPage() {
                 Join Nueve Lens
               </h1>
               <p className="text-light text-lg mb-6 leading-relaxed">
-                Start your photographic journey and capture moments that last
-                forever
+                Book professional photoshoots, explore stunning portfolios, and
+                get inspired by our photography blogs
               </p>
 
               <div className="space-y-3 text-sm text-light">
@@ -281,7 +283,7 @@ export default function RegisterPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Unlimited photo storage</span>
+                  <span>Book professional photoshoots</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <svg
@@ -295,7 +297,7 @@ export default function RegisterPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Advanced editing tools</span>
+                  <span>Explore stunning portfolios</span>
                 </div>
                 <div className="flex items-center justify-center">
                   <svg
@@ -309,13 +311,19 @@ export default function RegisterPage() {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span>Share with community</span>
+                  <span>Read expert photography blogs</span>
                 </div>
               </div>
             </div>
 
             {/* Right Side - Form */}
             <div className="md:w-3/5">
+              <h1 className="text-2xl font-bold text-center text-custom mb-2">
+                Create Your Account
+              </h1>
+              <p className="text-light text-center mb-8">
+                Join our photography community
+              </p>
               <form onSubmit={handleSubmit} className="space-y-4">
                 {/* Name Fields */}
                 <div className="grid grid-cols-2 gap-4">
