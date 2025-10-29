@@ -119,3 +119,52 @@
 .animate-loading-bar {
   animation: loading-bar 3s ease-in-out forwards;
 }
+
+/* Add these to your existing globals.css */
+
+@keyframes shutter {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float-photo {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--rotation, 0deg));
+  }
+  50% {
+    transform: translateY(-10px) rotate(calc(var(--rotation, 0deg) + 5deg));
+  }
+}
+
+.animate-shutter {
+  animation: shutter 1s ease-in-out;
+}
+
+.animate-flash {
+  animation: flash 0.5s ease-in-out;
+}
+
+.animate-float-photo {
+  animation: float-photo 3s ease-in-out infinite;
+}
